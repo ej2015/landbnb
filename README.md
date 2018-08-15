@@ -1,24 +1,6 @@
-# README
+This app uses GraphQL for query and mutation in a Rails app.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is based on this [tutorial](https://blog.codeship.com/how-to-implement-a-graphql-api-in-rails/) and its [repo](https://github.com/leighhalliday/landbnb). It has been updated to use:
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  1. Rails5.2
+  2. graphql-ruby ~>1.8 (class-based definitions)
