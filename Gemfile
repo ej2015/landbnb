@@ -28,8 +28,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1', '>=3.1.11'
 
 gem 'graphql', '~> 1.8'
-gem  'json_web_token', '~> 0.3.5'
-
+gem 'json_web_token', '~> 0.3.5'
+gem 'yard'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -45,6 +45,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 3.6'
   gem 'faker', '~> 1.8', '>= 1.8.4'
+  gem 'dotenv-rails', groups: [:development, :test]
 end
 
 group :development do
@@ -55,7 +56,6 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
-
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
