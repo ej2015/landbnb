@@ -1,10 +1,10 @@
 class Mutations::SignInUser < GraphQL::Schema::Mutation
-  argument :email, Types::AuthProviderEmailInput, required: true
+  argument :user, Types::AuthProviderEmailInput, required: true
 
   payload_type Types::AuthenticateType
 
-  def resolve(email:)
-    input = email
+  def resolve(user:)
+    input = user 
     return unless input
 
     user = User.find_by email: input[:email]
